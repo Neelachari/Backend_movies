@@ -1,0 +1,303 @@
+{ "Movies" : [
+    {
+      "MovieID": 1,
+      "Title": "The Matrix Resurrections",
+      "Release_Date": "2023-12-22",
+      "Description": "The Matrix saga continues with mind-bending action.",
+      "Poster_Image": "https://www.themoviedb.org/t/p/original/8c4a8kE7PizaGQQnditMmI1xbRp.jpg",
+      "Average_Rating": "8.5",
+      "Trailer_URL": "https://www.youtube.com/embed/9ix7TUGVYIo?si=_sThYHaKH7RLyRJw",
+      "Runtime": "148 minutes"
+    },
+    {
+      "MovieID": 2,
+      "Title": "Spider-Man: No Way Home",
+      "Release_Date": "2023-12-17",
+      "Description": "A multiverse adventure with Spider-Man.",
+      "Poster_Image": "https://m.media-amazon.com/images/I/81KWTMl0JUL._AC_UF1000,1000_QL80_.jpg",
+      "Average_Rating": "9.0",
+      "Trailer_URL": "https://www.youtube.com/embed/JfVOs4VSpmA?si=ExlkFrTKPQ_XG7dc%22%20title=%22YouTube%20video%20player",
+      "Runtime": "155 minutes"
+    },
+    {
+      "MovieID": 3,
+      "Title": "Eternals",
+      "Release_Date": "2023-11-05",
+      "Description": "Marvel's cosmic heroes unite against a new threat.",
+      "Poster_Image": "https://i.pinimg.com/originals/39/e8/e6/39e8e6d6c7efcabb159c95ee87417c96.jpg",
+      "Average_Rating": "8.2",
+      "Trailer_URL": "https://www.youtube.com/embed/x_me3xsvDgk?si=O8u5Z5r9USwnfNp6%22%20title=%22YouTube%20video%20player",
+      "Runtime": "157 minutes"
+    },
+    {
+      "MovieID": 4,
+      "Title": "Dune",
+      "Release_Date": "2023-11-15",
+      "Description": "Epic sci-fi adventure based on Frank Herbert's novel.",
+      "Poster_Image": "https://i.pinimg.com/736x/8a/d4/d6/8ad4d61c47afd582538984d6e308b04f.jpg",
+      "Average_Rating": "8.8",
+      "Trailer_URL": "https://www.youtube.com/embed/n9xhJrPXop4?si=rS72Gnc-_y0iKnY4%22%20title=%22YouTube%20video%20player",
+      "Runtime": "155 minutes"
+    },
+    {
+      "MovieID": 5,
+      "Title": "No Time to Die",
+      "Release_Date": "2023-10-20",
+      "Description": "James Bond returns for a thrilling mission.",
+      "Poster_Image": "https://w0.peakpx.com/wallpaper/140/229/HD-wallpaper-bond-25-007-james-bond-no-time-yo-die.jpg",
+      "Average_Rating": "7.9",
+      "Trailer_URL": "https://www.youtube.com/embed/BIhNsAtPbPI?si=_WrZPT7WfQeNx7Nu" ,
+      "Runtime": "163 minutes"
+    },
+    {
+      "MovieID": 6,
+      "Title": "Shang-Chi and the Legend of the Ten Rings",
+      "Release_Date": "2023-09-03",
+      "Description": "Marvel's martial arts superhero takes the stage.",
+      "Poster_Image": "https://wallpapercave.com/wp/wp9740674.jpg",
+      "Average_Rating": "8.4",
+      "Trailer_URL": "https://www.youtube.com/embed/giWIr7U1deA?si=0soO7LYs7Ta7GmP5",
+      "Runtime": "132 minutes"
+    },
+    {
+      "MovieID": 7,
+      "Title": "Black Widow",
+      "Release_Date": "2023-07-09",
+      "Description": "A solo adventure for the Avengers' former spy.",
+      "Poster_Image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwKUEK9KY_e1tls9BhUaqTLuoAflMMsLiABztkUY0qImoKQDXU9EMWIgU00vDPiOc7MIw&usqp=CAU",
+      "Average_Rating": "7.7",
+      "Trailer_URL": "https://www.youtube.com/embed/ybji16u608U?si=-mDFDA0jrxTP7ZjT",
+      "Runtime": "134 minutes"
+    },
+    {
+      "MovieID": 8,
+      "Title": "Luca",
+      "Release_Date": "2023-06-18",
+      "Description": "A heartwarming Pixar tale of friendship and adventure.",
+      "Poster_Image": "https://e1.pxfuel.com/desktop-wallpaper/21/118/desktop-wallpaper-luca-disney-pixar-luca-thumbnail.jpg",
+      "Average_Rating": "8.1",
+      "Trailer_URL": "https://www.youtube.com/embed/mYfJxlgR2jw?si=QHhAgmx7miUSKxUq",
+      "Runtime": "95 minutes"
+    },
+    {
+      "MovieID": 9,
+      "Title": "A Quiet Place Part II",
+      "Release_Date": "2023-05-28",
+      "Description": "Survival continues in a world of sound-sensitive monsters.",
+      "Poster_Image": "https://i0.wp.com/www.socialnews.xyz/wp-content/uploads/2020/02/26/a-quiet-place-part-II-Movie-HD-poster--scaled.jpg?quality=90",
+      "Average_Rating": "7.8",
+      "Trailer_URL": "https://www.youtube.com/embed/BpdDN9d9Jio?si=xjVfL09hp9y3HTnL",
+      "Runtime": "97 minutes"
+    },
+    {
+      "MovieID": 10,
+      "Title": "Cruella",
+      "Release_Date": "2023-05-26",
+      "Description": "The backstory of the iconic Disney villain.",
+      "Poster_Image": "https://lumiere-a.akamaihd.net/v1/images/p_cruella_21672_ba40c762.jpeg",
+      "Average_Rating": "7.7",
+      "Trailer_URL": "https://www.youtube.com/embed/gmRKv7n2If8?si=TBLepmGjU851j6a7",
+      "Runtime": "134 minutes"
+    },
+    {
+      "MovieID": 11,
+      "Title": "The Lost City",
+      "Release_Date": "2023-12-01",
+      "Description": "An author and a cover model get caught in an adventure.",
+      "Poster_Image": "https://m.media-amazon.com/images/M/MV5BMmIwYzFhODAtY2I1YS00ZDdmLTkyYWQtZjI5NDIwMDc2MjEyXkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_.jpg",
+      "Average_Rating": "7.9",
+      "Trailer_URL": "https://www.youtube.com/embed/nfKO9rYDmE8?si=4RjP_NTzau_m4Jp5",
+      "Runtime": "112 minutes"
+    },
+    {
+      "MovieID": 12,
+      "Title": "Ghostbusters: Afterlife",
+      "Release_Date": "2023-11-18",
+      "Description": "The next generation takes on ghostbusting.",
+      "Poster_Image": "https://posterspy.com/wp-content/uploads/2022/05/GhostbustersAfterlife.jpg",
+      "Average_Rating": "8.0",
+      "Trailer_URL": "https://www.youtube.com/embed/ahZFCF--uRY?si=9LBia1xIQT1N0BC1",
+      "Runtime": "124 minutes"
+    },
+    {
+      "MovieID": 13,
+      "Title": "Candyman",
+      "Release_Date": "2023-10-27",
+      "Description": "A chilling return to the legend of the Candyman.",
+      "Poster_Image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1Coww6zxq6e15XK2ySYYCA4BhK1aGtc8XacVQa4p873q1PPn_XawU0A5Yfa15Ql9l8Lw&usqp=CAU",
+      "Average_Rating": "7.5",
+      "Trailer_URL": "https://www.youtube.com/embed/tlwzuZ9kOQU?si=dvRLInyIKzTemhHF",
+      "Runtime": "91 minutes"
+    },
+    {
+      "MovieID": 14,
+      "Title": "Jungle Cruise",
+      "Release_Date": "2023-10-12",
+      "Description": "An adventurous river journey with unexpected challenges.",
+      "Poster_Image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrmU1lQg80AdnSQtOtsLM00V8bv5pcIPapC00wJA8t1vwG_ywzI13DXdfUyMVDSfHbw8Y&usqp=CAU",
+      "Average_Rating": "7.2",
+      "Trailer_URL": "https://www.youtube.com/embed/f_HvoipFcA8?si=_vKR7-ve9v4V1WOJ",
+      "Runtime": "127 minutes"
+    },
+    {
+      "MovieID": 15,
+      "Title": "The Green Knight",
+      "Release_Date": "2023-09-15",
+      "Description": "A fantasy adventure based on the Arthurian legend.",
+      "Poster_Image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQ3QdR9JT0rlykLSEefWGTy-rBVl-yAmJlhCNtfZMH1mkRdarca0chRlHBWjLwffbCXlg&usqp=CAU",
+      "Average_Rating": "7.8",
+      "Trailer_URL": "https://www.youtube.com/embed/VoJc2tH3WBw?si=L86aXeZq4ntSuhxu",
+      "Runtime": "130 minutes"
+    },
+    {
+      "MovieID": 16,
+      "Title": "Free Guy",
+      "Release_Date": "2023-08-10",
+      "Description": "A video game NPC becomes the hero of his own story.",
+      "Poster_Image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa94ivfiiwLux5qyOlNjB9k9Tg68Ttplxrow&usqp=CAU",
+      "Average_Rating": "8.1",
+      "Trailer_URL": "https://www.youtube.com/embed/X2m-08cOAbc?si=gLGghHfGOJFry3mY",
+      "Runtime": "115 minutes"
+    },
+    {
+      "MovieID": 17,
+      "Title": "Old",
+      "Release_Date": "2023-07-23",
+      "Description": "A family on a tropical vacation discovers a mysterious beach.",
+      "Poster_Image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaIAs6B3PeFMTabsZr2w-UURKcY78a_0B7Bw&usqp=CAU",
+      "Average_Rating": "6.2",
+      "Trailer_URL": "https://www.youtube.com/embed/X2m-08cOAbc?si=gLGghHfGOJFry3mY",
+      "Runtime": "108 minutes"
+    },
+    {
+      "MovieID": 18,
+      "Title": "Wrath of Man",
+      "Release_Date": "2023-05-07",
+      "Description": "A mysterious and skilled security guard seeks revenge.",
+      "Poster_Image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa2LYLpHRezUV2WFPE8sGlvIhbhR7X6kF6ow&usqp=CAU",
+      "Average_Rating": "7.4",
+      "Trailer_URL": "https://www.youtube.com/embed/EFYEni2gsK0?si=CTofnAWAEkqWayVT",
+      "Runtime": "119 minutes"
+    },
+    {
+      "MovieID": 19,
+      "Title": "The Conjuring: The Devil Made Me Do It",
+      "Release_Date": "2023-06-04",
+      "Description": "Paranormal investigators tackle a demonic possession case.",
+      "Poster_Image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4nRkDgc6LNHCG0Nfog0yEbIqRGaCYSx4o5MqZYubXMLJZ5UNXJB7WrILoDGugGllRgNU&usqp=CAU",
+      "Average_Rating": "7.1",
+      "Trailer_URL": "https://www.youtube.com/embed/h9Q4zZS2v1k?si=loE4BGn5_0rEdk64",
+      "Runtime": "112 minutes"
+    },
+    {
+      "MovieID": 20,
+      "Title": "Spiral: From the Book of Saw",
+      "Release_Date": "2023-05-14",
+      "Description": "A new chapter in the Saw franchise with a twisted plot.",
+      "Poster_Image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_lOnEyPehMMDlxW_p16_iBdutzYf4iWB5oY1d7qM_Vwi47wB1zAhhwGFWfqw6P7g3tTE&usqp=CAU",
+      "Average_Rating": "6.5",
+      "Trailer_URL": "https://www.youtube.com/embed/gzy6ORqE9IY?si=1wExzsFTxxMdwOa7",
+      "Runtime": "93 minutes"
+    },
+    {
+      "MovieID": 21,
+      "Title": "The French Dispatch",
+      "Release_Date": "2023-12-08",
+      "Description": "A quirky collection of stories from the final issue of an American magazine.",
+      "Poster_Image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhR9OCLie9smvPcnw5XyQ7wDIjdofMsgGQAy0L593iFfM4hBg2prrVJN-ek_F9SThL130&usqp=CAU",
+      "Average_Rating": "8.3",
+      "Trailer_URL": "https://www.youtube.com/embed/TcPk2p0Zaw4?si=BZT8tqLXAq37NgXk",
+      "Runtime": "107 minutes"
+    },
+    {
+      "MovieID": 22,
+      "Title": "The Batman",
+      "Release_Date": "2023-11-29",
+      "Description": "A darker take on the caped crusader's early years as a vigilante.",
+      "Poster_Image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQonqLVavz0gs7A2oYU-l6Pqw_VR9hQc5uCywaK7kvdAqEvzzhyMNzNvYfFNp4BDXtpAT8&usqp=CAU",
+      "Average_Rating": "9.1",
+      "Trailer_URL": "https://www.youtube.com/embed/mqqft2x_Aa4?si=UtGc8nRyfIzqkLu2",
+      "Runtime": "176 minutes"
+    },
+    {
+      "MovieID": 23,
+      "Title": "Cry Macho",
+      "Release_Date": "2023-11-03",
+      "Description": "A retired rodeo star takes on a job to bring back his employer's son from Mexico.",
+      "Poster_Image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRUgzTPeO7fEeFENh27Mow8by_86rVqb5XdJ7hYCLtcB2o16LCAvnO9qE-zqmi7Ty1rNM&usqp=CAU",
+      "Average_Rating": "7.0",
+      "Trailer_URL": "https://www.youtube.com/embed/JVc8SI5CAKw?si=iWtOnt-pKCMiWmxB",
+      "Runtime": "104 minutes"
+    },
+    {
+      "MovieID": 24,
+      "Title": "The Eyes of Tammy Faye",
+      "Release_Date": "2023-10-06",
+      "Description": "The rise and fall of televangelists Tammy Faye Bakker and Jim Bakker.",
+      "Poster_Image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIn9BRobQXoLJ_3-64Uj6PQLTaR64XHigT7taoZ6TDpzeJ8fJGajsxlcxpEQCLQFSNOd8&usqp=CAU",
+      "Average_Rating": "7.7",
+      "Trailer_URL": "https://www.youtube.com/embed/eMMLRnXPPJk?si=I8HLHEaaCsPPtNoq",
+      "Runtime": "126 minutes"
+    },
+    {
+      "MovieID": 25,
+      "Title": "Don't Breathe 2",
+      "Release_Date": "2023-08-25",
+      "Description": "The blind man returns, protecting a young girl from dangerous forces.",
+      "Poster_Image": "https://upload.wikimedia.org/wikipedia/en/d/d3/DontBreathe2OfficialPoster2021.png",
+      "Average_Rating": "6.8",
+      "Trailer_URL": "https://www.youtube.com/embed/gRbG2tjHYCA?si=ETxsIxeJlSsRlGcm",
+      "Runtime": "98 minutes"
+    },
+    {
+      "MovieID": 26,
+      "Title": "Space Jam: A New Legacy",
+      "Release_Date": "2023-07-14",
+      "Description": "LeBron James teams up with the Looney Tunes for a basketball adventure.",
+      "Poster_Image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpd7o7dfw7BdbxaLUfFIYnAewdq6HrToh001uGz9Lnqe05dGd6mN9haSl3ziCzkDp1-1s&usqp=CAU",
+      "Average_Rating": "6.4",
+      "Trailer_URL": "https://www.youtube.com/embed/olXYZOsXw_o?si=ko1MzSRaIXYsil3b",
+      "Runtime": "115 minutes"
+    },
+    {
+      "MovieID": 27,
+      "Title": "The Suicide Squad",
+      "Release_Date": "2023-06-30",
+      "Description": "A group of antiheroes sent on a dangerous mission by the government.",
+      "Poster_Image": "https://m.media-amazon.com/images/M/MV5BMjM1OTMxNzUyM15BMl5BanBnXkFtZTgwNjYzMTIzOTE@._V1_.jpg",
+      "Average_Rating": "7.3",
+      "Trailer_URL": "https://www.youtube.com/embed/eg5ciqQzmK0?si=3Yr7xg_h_Udu2W-e",
+      "Runtime": "132 minutes"
+    },
+    {
+      "MovieID": 28,
+      "Title": "A Quiet Place Part III",
+      "Release_Date": "2023-05-19",
+      "Description": "The Abbott family faces new threats in a post-apocalyptic world.",
+      "Poster_Image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQJTgyFOzO9G1MDkhBHDCgv3FTrEB-DpMpLZkFvEwbocnTviy-ZS6Gy5ATAGrOHba8ues&usqp=CAU",
+      "Average_Rating": "8.0",
+      "Trailer_URL": "https://www.youtube.com/embed/1Wy3i01rMZE?si=nSUPZVVbTNthUXs9",
+      "Runtime": "104 minutes"
+    },
+    {
+      "MovieID": 29,
+      "Title": "The Mitchells vs. The Machines",
+      "Release_Date": "2023-04-28",
+      "Description": "An animated family embarks on a road trip during a robot apocalypse.",
+      "Poster_Image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScyI8_D6mMxRZ2AwnOuTXP25xfEAVKTPAV-SlGXIdsQsbJzqrg8nmy5hfVtKIQVNjyBO4&usqp=CAU",
+      "Average_Rating": "8.6",
+      "Trailer_URL": "https://www.youtube.com/embed/toBGv7yvIV8?si=Q2YNHMUPzxHxY1mg",
+      "Runtime": "113 minutes"
+    },
+    {
+      "MovieID": 30,
+      "Title": "Chaos Walking",
+      "Release_Date": "2023-03-12",
+      "Description": "In a dystopian world, a young man discovers a girl with no filter on her thoughts.",
+      "Poster_Image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjvch2IGm1n4hLKRjO4Utky2imIJcJFwgzr2GSvlnNEmBsUGI4wKxkC0vuL4Ti5FhskTo&usqp=CAU",
+      "Average_Rating": "6.2",
+      "Trailer_URL": "https://www.youtube.com/embed/nRf4ZgzHoVw?si=7Chrtf3oRQSmZ64v",
+      "Runtime": "109 minutes"
+    }
+  ]
+}
