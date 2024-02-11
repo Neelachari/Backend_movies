@@ -11,6 +11,7 @@ const signupRouter=express.Router()
 signupRouter.post('/register', async(req,res)=>{
     try {
         let {Name,mobile_Number,age,email,password}=req.body
+        console.log(req.body)
         const existuser=await RegisterModel.find({email})
         if(existuser.length){
             return res.status(400).send({error:"User already exist"})
