@@ -40,14 +40,14 @@ MoviesRoute.post('/movie', async (req, res) => {
 })
 
 
-MoviesRoute.patch('/movie/:id',auth, async (req, res) => {
+MoviesRoute.patch('/movie/:id', async (req, res) => {
     let UpdatePost = await MoviesModal.updateOne({ _id: req.params.id }, req.body)
 
     res.send({ message: "The Post has been updated Successfully", UpdatePost })
 })
 
 
-MoviesRoute.delete('/movie/:id',auth, async (req, res) => {
+MoviesRoute.delete('/movie/:id', async (req, res) => {
     let deletePost = await MoviesModal.deleteOne({ _id: req.params.id })
     
     res.send({ message: "The Post has been deleted Successfully", deletePost })
