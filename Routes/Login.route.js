@@ -25,7 +25,7 @@ LoginRouter.post("/login", async(req,res)=>{
    }
 })
 
-LoginRouter.get("/logout", async()=>{
+LoginRouter.post("/logout", async()=>{
     try {
         const token=req.headers.authorization?.split(" ")[1]|| null
         if(token){
