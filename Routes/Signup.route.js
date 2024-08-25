@@ -53,7 +53,7 @@ signupRouter.post('/movie/:id/add-to-my-space',async (req, res) => {
 
         const updatedUser = await RegisterModel.findByIdAndUpdate(
             id,
-            { $push: { Account_info: accountId } },
+            { $push: { Account_info: [accountId] } },
             { new: true }
         );
 
