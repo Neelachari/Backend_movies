@@ -7,6 +7,7 @@ const signupSchema=mongoose.Schema({
     mobile_Number:{type:Number,required:true},
     age:{type:Number,required:true},
     password:{type:String,required:true},
+    Account_info: { type: [String], required: false}
 })
 
 const SignupModel=mongoose.model('Movies_signup', signupSchema)

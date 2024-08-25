@@ -54,4 +54,27 @@ const checkPass=(password)=>{
     return result1&&result2&&result3 ? true :false
 }
 
+
+// Add accountId to Account_info array of a movie
+signupRouter.post('/movie/:id/add-to-my-space', auth, async (req, res) => {
+    try {
+        const { id } = req.params;  // Movie ID from the URL parameter
+        const { accountId } = req.body;  // Account ID from the request body
+
+        const updatedMovie = await RegisterModel.findByIdAndUpdate(
+            id,
+            { $push: { Account_info: accountId } },
+            { new: true }
+        );
+
+        if (!updatedMovie) {
+            return res.status(404).send('Movie not found');
+        }
+
+        res.status(200).send({ message: "Account ID added to My Space", updatedMovie });
+    } catch (error) {
+        res.status(400).send({ error: error.message });
+    }
+});
+
 module.exports=signupRouter

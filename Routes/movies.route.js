@@ -54,27 +54,7 @@ MoviesRoute.delete('/movie/:id', async (req, res) => {
 })
 
 
-// Add accountId to Account_info array of a movie
-MoviesRoute.post('/movie/:id/add-to-my-space', auth, async (req, res) => {
-    try {
-        const { id } = req.params;  // Movie ID from the URL parameter
-        const { accountId } = req.body;  // Account ID from the request body
 
-        const updatedMovie = await MoviesModal.findByIdAndUpdate(
-            id,
-            { $push: { Account_info: accountId } },
-            { new: true }
-        );
-
-        if (!updatedMovie) {
-            return res.status(404).send('Movie not found');
-        }
-
-        res.status(200).send({ message: "Account ID added to My Space", updatedMovie });
-    } catch (error) {
-        res.status(400).send({ error: error.message });
-    }
-});
 
 
 module.exports = MoviesRoute
