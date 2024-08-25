@@ -56,7 +56,7 @@ const checkPass=(password)=>{
 
 
 // Add accountId to Account_info array of a movie
-signupRouter.post('/movie/:id/add-to-my-space', auth, async (req, res) => {
+signupRouter.post('/register/:id/add-to-my-space', auth, async (req, res) => {
     try {
         const { id } = req.params;  // Movie ID from the URL parameter
         const { accountId } = req.body;  // Account ID from the request body
