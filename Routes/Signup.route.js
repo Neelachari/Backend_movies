@@ -1,84 +1,70 @@
-const express=require("express")
+const express = require("express");
+const bcrypt = require("bcrypt");
+const RegisterModel = require('../Model/Signup.model');
+const signupRouter = express.Router();
 
-const bcrypt=require("bcrypt")
-
-require('dotenv').config()
-
-const RegisterModel=require('../Model/Signup.model')
-
-const signupRouter=express.Router()
-
-signupRouter.post('/register', async(req,res)=>{
+// User Registration Route
+signupRouter.post('/register', async (req, res) => {
     try {
-        let {Name,mobile_Number,age,email,password}=req.body
-        console.log(req.body)
-        const existuser=await RegisterModel.find({email})
-        if(existuser.length){
-            return res.status(400).send({error:"User already exist"})
-
+        let { Name, mobile_Number, age, email, password } = req.body;
+        const existuser = await RegisterModel.findOne({ email });
+        
+        if (existuser) {
+            return res.status(400).send({ error: "User already exists" });
         }
-        if(checkPass(password)){
-            const hash=bcrypt.hashSync(password, 8)
-            const User=new RegisterModel({...req.body, password:hash})
-            await User.save()
-            res.status(200).send("The new user has been registered")
+
+        if (checkPass(password)) {
+            const hash = bcrypt.hashSync(password, 8);
+            const User = new RegisterModel({ ...req.body, password: hash });
+            await User.save();
+            res.status(200).send("The new user has been registered");
+        } else {
+            res.status(400).send({ error: "Password must include at least one uppercase letter, one number, and one special character" });
         }
     } catch (error) {
-        res.status(400).send("something wroung")
+        res.status(400).send("Something went wrong");
     }
-    //return res.status(400).send({error:"Password should be atleast one uppercase one alpa and one number"})
-})
+});
 
-const checkPass=(password)=>{
-    if(password.length<8){
-        return false
+// Password Validation Function
+const checkPass = (password) => {
+    if (password.length < 8) return false;
+
+    const alpha = "QWERTYUIOPASDFGHJKLZXCVBNM";
+    const number = "0123456789";
+    const char = "~!@#$%^&*(){}[]_`=+";
+
+    let hasUpper = false, hasNumber = false, hasSpecial = false;
+
+    for (let i = 0; i < password.length; i++) {
+        if (alpha.includes(password[i])) hasUpper = true;
+        if (number.includes(password[i])) hasNumber = true;
+        if (char.includes(password[i])) hasSpecial = true;
     }
-    let alpha="QWERTYUIOPASDFGHJKLZXCVBNM"
-    let number="0123456789"
-    let char="~!@#$%^&*(){}[]_`=+"
-    let result1=false
-    let result2=false
-    let result3=false
 
-    for(let i=0;i<password.length;i++){
-        if(alpha.includes(password[i])){
-            result1=true
-        }
-        if(number.includes(password[i])){
-            result2=true
-        }
-        if(char.includes(password[i])){
-            result3=true
-        }
-    }
-    return result1&&result2&&result3 ? true :false
-}
+    return hasUpper && hasNumber && hasSpecial;
+};
 
-
-// Add accountId to Account_info array of a movie
+// Add accountId to Account_info array of a user
 signupRouter.post('/movie/:id/add-to-my-space', auth, async (req, res) => {
     try {
-        const { id } = req.params;  // Movie ID from the URL parameter
+        const { id } = req.params;  // User ID from the URL parameter
         const { accountId } = req.body;  // Account ID from the request body
 
-        const updatedMovie = await RegisterModel.findByIdAndUpdate(
+        const updatedUser = await RegisterModel.findByIdAndUpdate(
             id,
             { $push: { Account_info: accountId } },
             { new: true }
         );
 
-        if (!updatedMovie) {
-            return res.status(404).send('Movie not found');
+        if (!updatedUser) {
+            return res.status(404).send('User not found');
         }
 
-        res.status(200).send({ message: "Account ID added to My Space", updatedMovie });
+        res.status(200).send({ message: "Account ID added to My Space", updatedUser });
     } catch (error) {
         res.status(400).send({ error: error.message });
     }
 });
 
-
-
-
-
-module.exports=signupRouter
+module.exports = signupRouter;
