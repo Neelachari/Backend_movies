@@ -25,17 +25,17 @@ LoginRouter.post("/login", async(req,res)=>{
    }
 })
 
-LoginRouter.get("/logout", async()=>{
-    try {
-        const token=req.headers.authorization?.split(" ")[1]|| null
-        if(token){
-            await BlackListModel.updateMany({},{$push:{blacllist:[token]}})
-            res.status(200).send("User has been logged out")
-        }
-    } catch (error) {
-        res.status(400).send({error:err.message})
-    }
+// LoginRouter.get("/logout", async()=>{
+//     try {
+//         const token=req.headers.authorization?.split(" ")[1]|| null
+//         if(token){
+//             await BlackListModel.updateMany({},{$push:{blacllist:[token]}})
+//             res.status(200).send("User has been logged out")
+//         }
+//     } catch (error) {
+//         res.status(400).send({error:err.message})
+//     }
 
-})
+// })
 
 module.exports=LoginRouter

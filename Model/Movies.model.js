@@ -8,7 +8,8 @@ const MoviesSchema=mongoose.Schema({
     Poster_Image:{type:String,required:true},
     Average_Rating:{type:String,required:true},
     Trailer_URL:{type:String,required:true},
-    Runtime:{type:String,required:true}
+    Runtime:{type:String,required:true},
+    Account_info: { type: [String], required: false}
 
 })
 
