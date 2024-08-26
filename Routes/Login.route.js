@@ -18,7 +18,7 @@ LoginRouter.post("/login", async(req,res)=>{
     let verify=await bcrypt.compare(password,User.password)
     if(verify){
         const token= await JWT.sign({userId:User._id},process.env.key)
-        res.status(200).send({message:"Login Successful...",Name:User.Name,token})
+        res.status(200).send({message:"Login Successful...",UserId:User._id,Account_info:User.Account_info,token})
     }
    } catch (error) {
        res.status(400).send({message:"Email not Found please SignUp to continue"})

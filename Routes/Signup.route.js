@@ -46,14 +46,16 @@ const checkPass = (password) => {
 };
 
 // Add accountId to Account_info array of a user
-signupRouter.post('/movie/:id/add-to-my-space',async (req, res) => {
+signupRouter.post('/movie/:id/add-to-my-space', async (req, res) => {
     try {
-        const { id } = req.params;  // User ID from the URL parameter
+        const { id } = req.params;  // User ID (_id) from the URL parameter
         const { accountId } = req.body;  // Account ID from the request body
 
+        console.log("id", id, "accountId", accountId);
+
         const updatedUser = await RegisterModel.findByIdAndUpdate(
-            id,
-            { $push: { Account_info: [accountId] } },
+            accountId,
+            { $push: { Account_info: id } },
             { new: true }
         );
 
