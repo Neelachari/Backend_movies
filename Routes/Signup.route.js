@@ -45,11 +45,11 @@ const checkPass = (password) => {
     return hasUpper && hasNumber && hasSpecial;
 };
 
-// Add accountId to Account_info array of a user
+
 signupRouter.post('/movie/:id/add-to-my-space', async (req, res) => {
     try {
-        const { id } = req.params;  // User ID (_id) from the URL parameter
-        const { accountId } = req.body;  // Account ID from the request body
+        const { id } = req.params;  
+        const { accountId } = req.body; 
 
         console.log("id", id, "accountId", accountId);
 
@@ -64,6 +64,28 @@ signupRouter.post('/movie/:id/add-to-my-space', async (req, res) => {
         }
 
         res.status(200).send({ message: "Account ID added to My Space", updatedUser });
+    } catch (error) {
+        res.status(400).send({ error: error.message });
+    }
+});
+
+
+signupRouter.delete('/movie/:id/remove-from-my-space', async (req, res) => {
+    try {
+        const { id } = req.params;  
+        const { accountId } = req.body;  
+
+        const deleteUser = await RegisterModel.findByIdAndUpdate(
+            accountId,
+            { $pull: { Account_info: id } },
+            { new: true }
+        );
+
+        if (!deleteUser) {
+            return res.status(404).send('User not found');
+        }
+
+        res.status(200).send({ message: "Account ID removed from My Space", deleteUser });
     } catch (error) {
         res.status(400).send({ error: error.message });
     }
