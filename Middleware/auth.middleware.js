@@ -18,7 +18,7 @@ const auth= async(req,res, next)=>{
     }
     try {
        const decode=JWT.verify(token, process.env.key)
-       req.body.userID=decode.userID
+       req.body.userID=decode.userId
        next()
     } catch (error) {
         res.status(400).send({error:error.message})
