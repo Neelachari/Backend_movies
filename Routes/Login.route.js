@@ -15,13 +15,18 @@ LoginRouter.post("/login", async(req,res)=>{
     const {email, password}=req.body
    try {
     const User=await RegisterModel.findOne({email})
+    if(!User){
+        return res.status(400).send({message:"Email not Found please SignUp to continue"})
+    }
     let verify=await bcrypt.compare(password,User.password)
     if(verify){
         const token= await JWT.sign({userId:User._id},process.env.key)
         res.status(200).send({message:"Login Successful...",UserId:User._id,Account_info:User.Account_info,Name:User.Name,token})
+    } else {
+        res.status(400).send({message:"Invalid password"})
     }
    } catch (error) {
-       res.status(400).send({message:"Email not Found please SignUp to continue"})
+       res.status(400).send({message:"Something went wrong"})
    }
 })
 

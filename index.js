@@ -6,6 +6,7 @@ const connection = require("./Config/db");
 const signupRouter = require("./Routes/Signup.route");
 const loginRouter = require("./Routes/Login.route"); // Assuming you have this route
 const movieRouter = require("./Routes/movies.route");
+const subscriptionRouter = require("./Routes/subscription.route");
 
 const app = express();
 
@@ -15,6 +16,7 @@ app.use(cors());
 app.use("/users", signupRouter);
 app.use("/users", loginRouter);
 app.use("/movies", movieRouter);
+app.use("/subscription", subscriptionRouter);
 
 app.get("/", (req, res) => {
     res.send("Welcome to Movies");
