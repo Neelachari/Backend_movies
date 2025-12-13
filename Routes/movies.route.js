@@ -4,13 +4,8 @@ const MoviesModal = require('../Model/Movies.model')
 const SubscriptionModel = require('../Model/Subscription.model')
 const {auth}=require("../Middleware/auth.middleware")
 
-MoviesRoute.get('/movie', auth, async (req, res) => {
+MoviesRoute.get('/movie', async (req, res) => {
     try {
-        const userId = req.body.userID;
-        const subscription = await SubscriptionModel.findOne({ userId, active: true, endDate: { $gt: new Date() } });
-        if(!subscription) {
-            return res.status(403).send({error: 'Subscription required to view movies'});
-        }
         let Post= await MoviesModal.find()
         res.status(200).send(Post)
        
