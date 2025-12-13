@@ -6,7 +6,13 @@ const auth= async(req,res, next)=>{
     if(!req.headers.authorization){
         return res.status(400).send({error:"Authorization header missing"})
     }
-    const token =req.headers.authorization.split(" ")[1]
+    let token;
+    const authHeader = req.headers.authorization;
+    if(authHeader.startsWith("Bearer ")){
+        token = authHeader.split(" ")[1];
+    } else {
+        token = authHeader;
+    }
     if(!token){
         return res.status(400).send({error:"Token missing"})
     }
